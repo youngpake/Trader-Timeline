@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">
+    <title>Routine</title>
+</head>
+
+<body>
+
+    <h1>Global Macro Trading</h1>
+
+    <div class="backgroundschema">
+    <div class="eventcontainer">
+
+        <div class="timezone">
+        <div id="1" onclick="ClickTransition(1)" class="event blue"><h3 id="eventText">Wake</h3></div>
+        <div id="2" onclick="ClickTransition(2)" class="event blue"><h3>Look at yesterdays evidence</h3></div>
+         <div id="3" onclick="ClickTransition(3)" class="event blue">CNA for todays events</div>
+        </div>
+
+         <div class="timezone">
+          <div id="4" onclick="ClickTransition(4)" class="event green">Write down scenarios for todays news</div>
+           <div id="5" onclick="ClickTransition(5)" class="event green">Stops <br> & <br> option barriers</div>
+          <div id="6" onclick="ClickTransition(6)" class="event green">Add Multi TF Analysis to 1 pair</div>
+          </div>
+
+          <div class="timezone">
+         <div id="7" onclick="ClickTransition(7)" class="event purple">Read News articles</div>
+        <div id="8" onclick="ClickTransition(8)" class="event purple">Intermarket Analysis</div>
+        <div id="9" onclick="ClickTransition(9)" class="event purple">Note Trade Idea's</div>
+        </div>
+    </div>
+
+
+     <input title="something" type="range" id="timeline" name="timeline" min="0" max="12">
+     <div class="clockContainer"><h2 id="clock"></h2></div>
+
+
+        <div id="sessionsContainer">
+        <div class="london sessions">London Open</div>
+        <div class="newyork sessions">New York Open</div>
+        <div class="tokyo sessions">Tokyo Open</div>
+    </div>
+    </div>
+    
+    <h2 id="DayOfWeek"></h2>
+</body>
+<script src="index.js"></script>
+</html>
